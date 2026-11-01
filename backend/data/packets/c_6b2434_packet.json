@@ -1,0 +1,251 @@
+{
+  "case_id": "c_6b2434",
+  "district": "Claimed Farm Plot",
+  "peril": "flood",
+  "crop": "wheat",
+  "claimed_event_date": "2022-08-23",
+  "plot": {
+    "area_ha": 1.77,
+    "centroid": [
+      25.1867,
+      76.1908
+    ],
+    "crs": "EPSG:4326",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            76.19019999999999,
+            25.1861
+          ],
+          [
+            76.1914,
+            25.1861
+          ],
+          [
+            76.1914,
+            25.187299999999997
+          ],
+          [
+            76.19019999999999,
+            25.187299999999997
+          ],
+          [
+            76.19019999999999,
+            25.1861
+          ]
+        ]
+      ]
+    }
+  },
+  "event_verification": {
+    "source": "open-meteo-archive",
+    "supports_claim": true,
+    "reason": "Substantial rainfall detected: 168.1 mm over window (peak 83.6 mm/day).",
+    "metrics": {
+      "precip_7d_mm": 168.1,
+      "max_daily_precip_mm": 83.6,
+      "precip_percentile": 99.9,
+      "hail_code_present": false,
+      "max_wind_gust_kmh": 54.0
+    },
+    "timeline": {
+      "dates": [
+        "2022-08-16",
+        "2022-08-17",
+        "2022-08-18",
+        "2022-08-19",
+        "2022-08-20",
+        "2022-08-21",
+        "2022-08-22",
+        "2022-08-23",
+        "2022-08-24",
+        "2022-08-25",
+        "2022-08-26",
+        "2022-08-27",
+        "2022-08-28",
+        "2022-08-29",
+        "2022-08-30"
+      ],
+      "precipitation": [
+        14.3,
+        4.2,
+        0.9,
+        1.5,
+        2.5,
+        35.3,
+        83.6,
+        7.6,
+        9.5,
+        7.7,
+        0.1,
+        0.5,
+        0.4,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "imagery": {
+    "pre": {
+      "scene_id": "S2A_MSIL2A_20220822T052701_R105_T43RFH_20240714T035309",
+      "clear_frac": 0.94
+    },
+    "post": {
+      "scene_id": "S2B_MSIL2A_20220827T052649_R105_T43RFH_20240715T144919",
+      "clear_frac": 0.36
+    },
+    "sar": {
+      "vv_db": -4.73,
+      "water_frac": 0.0
+    }
+  },
+  "analysis": {
+    "ndvi_pre": 0.68,
+    "ndvi_post": 0.36,
+    "control_change_mean": -0.024,
+    "damage_pct": 43.6,
+    "damage_ci": [
+      41.5,
+      45.9
+    ],
+    "z_vs_controls": -6.0,
+    "widespread": false,
+    "n_controls": 30,
+    "control_points": [
+      {
+        "lat": 25.1867,
+        "lon": 76.204314,
+        "change": -0.015
+      },
+      {
+        "lat": 25.19366,
+        "lon": 76.21222,
+        "change": 0.015
+      },
+      {
+        "lat": 25.205234,
+        "lon": 76.21631,
+        "change": 0.031
+      },
+      {
+        "lat": 25.197633,
+        "lon": 76.198743,
+        "change": -0.001
+      },
+      {
+        "lat": 25.20812,
+        "lon": 76.19776,
+        "change": -0.082
+      },
+      {
+        "lat": 25.218232,
+        "lon": 76.1908,
+        "change": -0.018
+      },
+      {
+        "lat": 25.199552,
+        "lon": 76.186624,
+        "change": -0.024
+      },
+      {
+        "lat": 25.204921,
+        "lon": 76.177562,
+        "change": -0.108
+      },
+      {
+        "lat": 25.205234,
+        "lon": 76.16529,
+        "change": 0.041
+      },
+      {
+        "lat": 25.190876,
+        "lon": 76.177948,
+        "change": -0.015
+      },
+      {
+        "lat": 25.1867,
+        "lon": 76.168277,
+        "change": -0.045
+      },
+      {
+        "lat": 25.176956,
+        "lon": 76.160812,
+        "change": 0.045
+      },
+      {
+        "lat": 25.178757,
+        "lon": 76.179867,
+        "change": -0.131
+      },
+      {
+        "lat": 25.168479,
+        "lon": 76.177562,
+        "change": -0.058
+      },
+      {
+        "lat": 25.156712,
+        "lon": 76.181056,
+        "change": -0.012
+      },
+      {
+        "lat": 25.173186,
+        "lon": 76.1908,
+        "change": 0.004
+      },
+      {
+        "lat": 25.16528,
+        "lon": 76.19776,
+        "change": -0.029
+      },
+      {
+        "lat": 25.16119,
+        "lon": 76.209334,
+        "change": -0.04
+      },
+      {
+        "lat": 25.178757,
+        "lon": 76.201733,
+        "change": -0.104
+      },
+      {
+        "lat": 25.17974,
+        "lon": 76.21222,
+        "change": 0.009
+      }
+    ]
+  },
+  "checks": {
+    "event_date_match": "pass",
+    "event_date_reason": "Weather anomaly confirmed within qualifying window.",
+    "crop_signal": "pass",
+    "crop_signal_reason": "Healthy pre-event vegetative canopy (NDVI 0.68 >= 0.30).",
+    "area_ok": "pass",
+    "area_ok_reason": "Drawn area (1.77 ha) closely matches declared policy (1.45 ha).",
+    "distinctness": "pass",
+    "distinctness_reason": "Z-score -6.0 indicates significant isolated divergence from neighbors."
+  },
+  "confidence": 79.7,
+  "confidence_interval": [
+    74.6,
+    84.8
+  ],
+  "triage": "FAST_TRACK",
+  "triage_reason": "Verified localized calamity with high statistical separation and confidence.",
+  "provenance": {
+    "tools": {
+      "stac": "pystac-client-0.9",
+      "rasterio": "1.4.4",
+      "weather": "open-meteo"
+    },
+    "provider": "Microsoft Planetary Computer",
+    "sha256": "3c6bcb243a2ef327f5ddd97631f80d9819dde0951c385764625b60bd576e66ea",
+    "generated_at": "2026-11-01T17:18:06.783527Z"
+  },
+  "farmer_summary": {
+    "lang": "hi",
+    "text": "उपग्रह विश्लेषण के अनुसार आपके wheat के खेत में 43.6% फसल क्षति की पुष्टि हुई है। आसपास के खेतों की तुलना में यह नुकसान विशिष्ट है। आपका दावा 'फास्ट ट्रैक (Fast Track)' श्रेणी में दर्ज किया गया है और बिना देरी प्रक्रिया में है।",
+    "text_en": "Satellite analysis confirms 43.6% localized damage on your wheat plot. Your claim has been triaged for FAST TRACK direct processing (Confidence: 79.7%)."
+  }
+}

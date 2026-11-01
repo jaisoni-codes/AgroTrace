@@ -1,0 +1,43 @@
+# KhetSaakshi Scoring and Triage Configuration
+# All thresholds live in this config file (PDF Section 7 & 12)
+
+scoring:
+  weights:
+    data_quality: 0.30
+    control_separation: 0.25
+    event_agreement: 0.20
+    crop_consistency: 0.15
+    spatial_coverage: 0.10
+
+thresholds:
+  damage_fast_track: 20.0     # damage >= 20%
+  z_fast_track: -2.0          # z <= -2.0
+  confidence_fast_track: 75.0 # confidence >= 75%
+  
+  confidence_surveyor_min: 40.0
+  confidence_surveyor_max: 75.0
+  damage_surveyor_min: 10.0
+  damage_surveyor_max: 20.0
+  
+  widespread_threshold: 0.50  # > 50% controls dropped -> widespread event
+
+optical:
+  cloud_clear_fraction_min: 0.60
+  min_plot_ha: 0.20           # 20 pixels minimum
+  pre_window_days: 60
+  post_window_days: 30
+  scl_valid_classes: [4, 5]   # Vegetation (4) and Bare Soil (5)
+
+sar:
+  flood_db_threshold: -16.0
+  flood_change_db: -3.0
+
+controls:
+  max_candidate_blocks: 200
+  ring_inner_km: 1.0
+  ring_outer_km: 5.0
+  ring_outer_expanded_km: 10.0
+  r_threshold: 0.80
+  mean_ndvi_diff_max: 0.10
+  n_selected_controls: 30
+  bootstrap_iterations: 500

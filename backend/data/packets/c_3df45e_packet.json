@@ -1,0 +1,251 @@
+{
+  "case_id": "c_3df45e",
+  "district": "Kota, Rajasthan",
+  "peril": "flood",
+  "crop": "soybean",
+  "claimed_event_date": "2023-08-14",
+  "plot": {
+    "area_ha": 60.37,
+    "centroid": [
+      28.78112,
+      76.12731
+    ],
+    "crs": "EPSG:4326",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            76.12381456756592,
+            28.777623177178835
+          ],
+          [
+            76.13081456756592,
+            28.777623177178835
+          ],
+          [
+            76.13081456756592,
+            28.784623177178833
+          ],
+          [
+            76.12381456756592,
+            28.784623177178833
+          ],
+          [
+            76.12381456756592,
+            28.777623177178835
+          ]
+        ]
+      ]
+    }
+  },
+  "event_verification": {
+    "source": "open-meteo-archive",
+    "supports_claim": false,
+    "reason": "Rainfall (3.4 mm) below severe flooding threshold.",
+    "metrics": {
+      "precip_7d_mm": 3.4,
+      "max_daily_precip_mm": 2.4,
+      "precip_percentile": 10.0,
+      "hail_code_present": false,
+      "max_wind_gust_kmh": 43.9
+    },
+    "timeline": {
+      "dates": [
+        "2023-08-07",
+        "2023-08-08",
+        "2023-08-09",
+        "2023-08-10",
+        "2023-08-11",
+        "2023-08-12",
+        "2023-08-13",
+        "2023-08-14",
+        "2023-08-15",
+        "2023-08-16",
+        "2023-08-17",
+        "2023-08-18",
+        "2023-08-19",
+        "2023-08-20",
+        "2023-08-21"
+      ],
+      "precipitation": [
+        0.0,
+        0.0,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.2,
+        0.0,
+        0.6,
+        0.0,
+        0.0,
+        0.0,
+        2.4,
+        0.1,
+        0.0
+      ]
+    }
+  },
+  "imagery": {
+    "pre": {
+      "scene_id": "S2B_MSIL2A_20230812T052649_R105_T43RFM_20241015T084652",
+      "clear_frac": 0.94
+    },
+    "post": {
+      "scene_id": "S2A_MSIL2A_20230817T052651_R105_T43RFM_20241023T165430",
+      "clear_frac": 0.92
+    },
+    "sar": {
+      "vv_db": -9.71,
+      "water_frac": 0.107
+    }
+  },
+  "analysis": {
+    "ndvi_pre": 0.418,
+    "ndvi_post": 0.56,
+    "control_change_mean": -0.019,
+    "damage_pct": 0.0,
+    "damage_ci": [
+      0.0,
+      0.0
+    ],
+    "z_vs_controls": 4.14,
+    "widespread": false,
+    "n_controls": 30,
+    "control_points": [
+      {
+        "lat": 28.781123,
+        "lon": 76.140828,
+        "change": -0.01
+      },
+      {
+        "lat": 28.788083,
+        "lon": 76.148735,
+        "change": -0.04
+      },
+      {
+        "lat": 28.799657,
+        "lon": 76.152824,
+        "change": -0.03
+      },
+      {
+        "lat": 28.792056,
+        "lon": 76.135258,
+        "change": 0.027
+      },
+      {
+        "lat": 28.802543,
+        "lon": 76.134274,
+        "change": -0.073
+      },
+      {
+        "lat": 28.812655,
+        "lon": 76.127315,
+        "change": -0.067
+      },
+      {
+        "lat": 28.793975,
+        "lon": 76.123139,
+        "change": -0.023
+      },
+      {
+        "lat": 28.799344,
+        "lon": 76.114076,
+        "change": -0.015
+      },
+      {
+        "lat": 28.799657,
+        "lon": 76.101805,
+        "change": -0.006
+      },
+      {
+        "lat": 28.785299,
+        "lon": 76.114462,
+        "change": -0.079
+      },
+      {
+        "lat": 28.781123,
+        "lon": 76.104792,
+        "change": 0.046
+      },
+      {
+        "lat": 28.771379,
+        "lon": 76.097326,
+        "change": -0.038
+      },
+      {
+        "lat": 28.77318,
+        "lon": 76.116382,
+        "change": -0.009
+      },
+      {
+        "lat": 28.762902,
+        "lon": 76.114076,
+        "change": 0.009
+      },
+      {
+        "lat": 28.751135,
+        "lon": 76.117571,
+        "change": -0.015
+      },
+      {
+        "lat": 28.76761,
+        "lon": 76.127315,
+        "change": -0.024
+      },
+      {
+        "lat": 28.759703,
+        "lon": 76.134274,
+        "change": 0.045
+      },
+      {
+        "lat": 28.755614,
+        "lon": 76.145848,
+        "change": -0.003
+      },
+      {
+        "lat": 28.77318,
+        "lon": 76.138247,
+        "change": -0.091
+      },
+      {
+        "lat": 28.774163,
+        "lon": 76.148735,
+        "change": -0.041
+      }
+    ]
+  },
+  "checks": {
+    "event_date_match": "warn",
+    "event_date_reason": "Moderate or distant meteorological signature.",
+    "crop_signal": "pass",
+    "crop_signal_reason": "Healthy pre-event vegetative canopy (NDVI 0.418 >= 0.30).",
+    "area_ok": "warn",
+    "area_ok_reason": "Drawn area (60.37 ha) differs >30% from declared 1.2 ha.",
+    "distinctness": "warn",
+    "distinctness_reason": "Z-score 4.14 shows neighbor variance similar to plot."
+  },
+  "confidence": 63.2,
+  "confidence_interval": [
+    54.0,
+    72.4
+  ],
+  "triage": "SURVEYOR_VISIT",
+  "triage_reason": "Moderate damage or statistical variance requires on-ground surveyor inspection.",
+  "provenance": {
+    "tools": {
+      "stac": "pystac-client-0.9",
+      "rasterio": "1.4.4",
+      "weather": "open-meteo"
+    },
+    "provider": "Microsoft Planetary Computer",
+    "sha256": "1a9367d7d0e1a4aacc42375bf43f664770f7616d7ba924af27b87ae64c21b923",
+    "generated_at": "2026-11-01T12:45:14.428408Z"
+  },
+  "farmer_summary": {
+    "lang": "hi",
+    "text": "उपग्रह जांच में आपके खेत पर 0.0% फसल का असर मिला है। स्थिति की सटीक पुष्टि और नियमानुसार सत्यापन हेतु एक सर्वेक्षक (Surveyor) को प्राथमिकता के आधार पर भेजा जा रहा है।",
+    "text_en": "Satellite signals show 0.0% impact on your soybean field. A surveyor visit has been prioritized for physical inspection (Confidence: 63.2%)."
+  }
+}

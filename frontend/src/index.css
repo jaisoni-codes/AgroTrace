@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #1F5C45;
+  --color-on-primary: #F7F5EE;
+  --color-primary-hover: #184A38;
+  --color-primary-container: #DCEBE2;
+  --color-on-primary-container: #123626;
+  --color-ink: #14231C;
+  --color-ink-muted: #4F5C54;
+  --color-ink-subtle: #5E6A63;
+  --color-paper: #F4F1E8;
+  --color-surface: #FBFAF6;
+  --color-surface-sunken: #ECE8DB;
+  --color-line: #D8D3C3;
+  --color-line-strong: #B9B29E;
+  --color-clay: #A44E17;
+  --color-on-clay: #FBF6EF;
+  --color-clay-container: #F3DFCF;
+  --color-tertiary: #2F6B8F;
+  --color-tertiary-container: #DDEAF2;
+  --color-fast-track: #1F6B45;
+  --color-fast-track-container: #E1EFE6;
+  --color-surveyor: #8A5A00;
+  --color-surveyor-container: #F8ECCB;
+  --color-review: #9C3A2E;
+  --color-review-container: #F6DDD8;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-variant-numeric: tabular-nums;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-editorial {
+  font-family: 'Newsreader', Georgia, serif;
+}
+
+.font-mono-ledger {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.font-hindi {
+  font-family: 'Noto Sans Devanagari', sans-serif;
+}
+
+/* Hairline borders */
+.border-line {
+  border-color: var(--color-line);
+}
+.border-line-strong {
+  border-color: var(--color-line-strong);
+}
+
+/* Hatch pattern for uncertainty */
+.bg-hatched {
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 4px,
+    rgba(185, 178, 158, 0.4) 4px,
+    rgba(185, 178, 158, 0.4) 8px
+  );
+}
+
+/* Leaflet Container */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  background: #f0ebe0;
+}
+
+.leaflet-tile { filter: grayscale(40%) contrast(95%) brightness(102%); }

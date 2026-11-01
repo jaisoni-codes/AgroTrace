@@ -1,0 +1,251 @@
+{
+  "case_id": "c_c5926e",
+  "district": "Claimed Farm Plot",
+  "peril": "flood",
+  "crop": "soybean",
+  "claimed_event_date": "2022-08-23",
+  "plot": {
+    "area_ha": 60.37,
+    "centroid": [
+      25.28705,
+      76.16894
+    ],
+    "crs": "EPSG:4326",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            76.16544245147706,
+            25.28355206389732
+          ],
+          [
+            76.17244245147707,
+            25.28355206389732
+          ],
+          [
+            76.17244245147707,
+            25.29055206389732
+          ],
+          [
+            76.16544245147706,
+            25.29055206389732
+          ],
+          [
+            76.16544245147706,
+            25.28355206389732
+          ]
+        ]
+      ]
+    }
+  },
+  "event_verification": {
+    "source": "open-meteo-archive",
+    "supports_claim": true,
+    "reason": "Substantial rainfall detected: 161.5 mm over window (peak 81.9 mm/day).",
+    "metrics": {
+      "precip_7d_mm": 161.5,
+      "max_daily_precip_mm": 81.9,
+      "precip_percentile": 99.9,
+      "hail_code_present": false,
+      "max_wind_gust_kmh": 54.0
+    },
+    "timeline": {
+      "dates": [
+        "2022-08-16",
+        "2022-08-17",
+        "2022-08-18",
+        "2022-08-19",
+        "2022-08-20",
+        "2022-08-21",
+        "2022-08-22",
+        "2022-08-23",
+        "2022-08-24",
+        "2022-08-25",
+        "2022-08-26",
+        "2022-08-27",
+        "2022-08-28",
+        "2022-08-29",
+        "2022-08-30"
+      ],
+      "precipitation": [
+        10.7,
+        6.5,
+        0.8,
+        1.3,
+        2.3,
+        30.4,
+        81.9,
+        8.7,
+        6.2,
+        11.8,
+        0.0,
+        0.4,
+        0.4,
+        0.0,
+        0.1
+      ]
+    }
+  },
+  "imagery": {
+    "pre": {
+      "scene_id": "S2A_MSIL2A_20220822T052701_R105_T43RFJ_20240714T035309",
+      "clear_frac": 0.94
+    },
+    "post": {
+      "scene_id": "S2B_MSIL2A_20220827T052649_R105_T43RFJ_20240715T144919",
+      "clear_frac": 0.99
+    },
+    "sar": {
+      "vv_db": -6.95,
+      "water_frac": 0.009
+    }
+  },
+  "analysis": {
+    "ndvi_pre": 0.68,
+    "ndvi_post": 0.36,
+    "control_change_mean": -0.019,
+    "damage_pct": 44.2,
+    "damage_ci": [
+      42.5,
+      46.2
+    ],
+    "z_vs_controls": -7.35,
+    "widespread": false,
+    "n_controls": 30,
+    "control_points": [
+      {
+        "lat": 25.287052,
+        "lon": 76.182456,
+        "change": -0.013
+      },
+      {
+        "lat": 25.294012,
+        "lon": 76.190363,
+        "change": 0.001
+      },
+      {
+        "lat": 25.305586,
+        "lon": 76.194452,
+        "change": -0.03
+      },
+      {
+        "lat": 25.297985,
+        "lon": 76.176885,
+        "change": -0.027
+      },
+      {
+        "lat": 25.308472,
+        "lon": 76.175902,
+        "change": -0.094
+      },
+      {
+        "lat": 25.318584,
+        "lon": 76.168942,
+        "change": -0.067
+      },
+      {
+        "lat": 25.299904,
+        "lon": 76.164767,
+        "change": -0.031
+      },
+      {
+        "lat": 25.305273,
+        "lon": 76.155704,
+        "change": -0.045
+      },
+      {
+        "lat": 25.305586,
+        "lon": 76.143433,
+        "change": -0.074
+      },
+      {
+        "lat": 25.291228,
+        "lon": 76.15609,
+        "change": 0.016
+      },
+      {
+        "lat": 25.287052,
+        "lon": 76.14642,
+        "change": 0.022
+      },
+      {
+        "lat": 25.277308,
+        "lon": 76.138954,
+        "change": -0.059
+      },
+      {
+        "lat": 25.279109,
+        "lon": 76.15801,
+        "change": -0.063
+      },
+      {
+        "lat": 25.268831,
+        "lon": 76.155704,
+        "change": -0.023
+      },
+      {
+        "lat": 25.257064,
+        "lon": 76.159199,
+        "change": -0.043
+      },
+      {
+        "lat": 25.273539,
+        "lon": 76.168942,
+        "change": -0.021
+      },
+      {
+        "lat": 25.265632,
+        "lon": 76.175902,
+        "change": -0.052
+      },
+      {
+        "lat": 25.261543,
+        "lon": 76.187476,
+        "change": 0.015
+      },
+      {
+        "lat": 25.279109,
+        "lon": 76.179875,
+        "change": 0.105
+      },
+      {
+        "lat": 25.280092,
+        "lon": 76.190363,
+        "change": -0.011
+      }
+    ]
+  },
+  "checks": {
+    "event_date_match": "pass",
+    "event_date_reason": "Weather anomaly confirmed within qualifying window.",
+    "crop_signal": "pass",
+    "crop_signal_reason": "Healthy pre-event vegetative canopy (NDVI 0.68 >= 0.30).",
+    "area_ok": "warn",
+    "area_ok_reason": "Drawn area (60.37 ha) differs >30% from declared 1.2 ha.",
+    "distinctness": "pass",
+    "distinctness_reason": "Z-score -7.35 indicates significant isolated divergence from neighbors."
+  },
+  "confidence": 98.8,
+  "confidence_interval": [
+    95.8,
+    100.0
+  ],
+  "triage": "FAST_TRACK",
+  "triage_reason": "Verified localized calamity with high statistical separation and confidence.",
+  "provenance": {
+    "tools": {
+      "stac": "pystac-client-0.9",
+      "rasterio": "1.4.4",
+      "weather": "open-meteo"
+    },
+    "provider": "Microsoft Planetary Computer",
+    "sha256": "9c0b842b6b173576772a57dfeb4f31185b5604ddee7df0990f8d55e760de4b33",
+    "generated_at": "2026-11-01T13:59:15.209253Z"
+  },
+  "farmer_summary": {
+    "lang": "hi",
+    "text": "उपग्रह विश्लेषण के अनुसार आपके soybean के खेत में 44.2% फसल क्षति की पुष्टि हुई है। आसपास के खेतों की तुलना में यह नुकसान विशिष्ट है। आपका दावा 'फास्ट ट्रैक (Fast Track)' श्रेणी में दर्ज किया गया है और बिना देरी प्रक्रिया में है।",
+    "text_en": "Satellite analysis confirms 44.2% localized damage on your soybean plot. Your claim has been triaged for FAST TRACK direct processing (Confidence: 98.8%)."
+  }
+}

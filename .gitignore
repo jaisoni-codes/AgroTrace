@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+dist/
+build/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment and sensitive tokens
+.env
+.env.local
+.env.*.local
+
+# IDE / System
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Test & coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+*.log
