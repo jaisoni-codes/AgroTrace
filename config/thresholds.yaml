@@ -1,4 +1,4 @@
-# KhetSaakshi Scoring and Triage Configuration
+# AgroTrace Scoring and Triage Configuration
 # All thresholds live in this config file (PDF Section 7 & 12)
 
 scoring:

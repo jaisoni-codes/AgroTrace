@@ -1,10 +1,10 @@
-# KhetSaakshi - 3-Minute Live Demo Pitch Script
+# AgroTrace - 3-Minute Live Demo Pitch Script
 Matches PDF Section 9 & Section 14.
 
 ### 0:00 - 0:25 The Problem & Gap
 - Under PMFBY, localized calamities (flood/hail) are assessed farm-by-farm within a 72-hour notification window.
 - Surveyor queues create multi-week delays and mutual distrust.
-- Government's YES-TECH operates at the area-yield level. KhetSaakshi fills the missing hyper-local plot-level triage layer.
+- Government's YES-TECH operates at the area-yield level. AgroTrace fills the missing hyper-local plot-level triage layer.
 
 ### 0:25 - 1:35 Live Verification Run
 - Select or click any farm polygon on the map.

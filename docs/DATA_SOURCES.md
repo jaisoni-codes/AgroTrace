@@ -1,4 +1,4 @@
-# Verified Live Data Sources (KhetSaakshi)
+# Verified Live Data Sources (AgroTrace)
 Created as required by Phase 1 Task & PDF Section 5.
 
 ## 1. Optical Imagery (10 m)

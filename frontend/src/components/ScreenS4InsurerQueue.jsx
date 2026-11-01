@@ -31,7 +31,7 @@ export function ScreenS4InsurerQueue({ onSelectCase, onNavigateToMap }) {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = "khetsaakshi_triage_batch.csv";
+    a.download = "agrotrace_triage_batch.csv";
     a.click();
   };
 

@@ -1,9 +1,9 @@
-# KhetSaakshi - Plain-Language Walkthrough
+# AgroTrace - Plain-Language Walkthrough
 Satellite Witness for Localized Crop-Loss Claims under PMFBY
 
-## What Problem KhetSaakshi Solves
+## What Problem AgroTrace Solves
 Under PMFBY (Pradhan Mantri Fasal Bima Yojana), localized calamities like hailstorms and inundations are assessed farm-by-farm. Farmers must report damage within 72 hours. With only a limited number of surveyors available, visits can take weeks, during which weather and rotting wash away physical evidence.
-Existing satellite initiatives like YES-TECH estimate yield at the area (gram panchayat/block) level. KhetSaakshi fills the missing **hyper-local plot-level triage** gap.
+Existing satellite initiatives like YES-TECH estimate yield at the area (gram panchayat/block) level. AgroTrace fills the missing **hyper-local plot-level triage** gap.
 
 ## 10-Step Deterministic + Agentic Architecture
 1. **Intake & Validation**: Clean polygon geometry, validates area <= 50 ha, validates claimed sowing and event dates.

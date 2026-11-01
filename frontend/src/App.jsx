@@ -159,7 +159,7 @@ export default function App() {
               <circle cx="5" cy="21" r="2.5" fill="#1F5C45" />
             </svg>
             <span className="font-editorial text-xl font-medium tracking-tight text-[#14231C]">
-              KhetSaakshi
+              AgroTrace
             </span>
           </div>
 

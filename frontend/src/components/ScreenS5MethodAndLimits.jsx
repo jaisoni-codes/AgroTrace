@@ -14,7 +14,7 @@ export function ScreenS5MethodAndLimits() {
 
         {/* Section 1: 5-Step Process */}
         <div className="p-5 bg-[#FBFAF6] rounded-[6px] border border-[#D8D3C3] space-y-4">
-          <h2 className="font-editorial text-xl font-medium text-[#14231C]">How KhetSaakshi Works in 5 Steps</h2>
+          <h2 className="font-editorial text-xl font-medium text-[#14231C]">How AgroTrace Works in 5 Steps</h2>
           
           <div className="space-y-3 text-xs leading-relaxed text-[#14231C]">
             <p>
@@ -24,7 +24,7 @@ export function ScreenS5MethodAndLimits() {
               <strong>2. Dual-Sensor Imagery (Optical + SAR):</strong> We query Sentinel-2 L2A optical scenes via Microsoft Planetary Computer STAC. When cloud cover obscures the farm polygon (SCL valid pixels &lt; 60%), the agent triggers an automated fallback to Sentinel-1 RTC Synthetic Aperture Radar (SAR), which penetrates clouds to detect surface water inundation.
             </p>
             <p>
-              <strong>3. Matched Controls & Difference-in-Differences:</strong> A drop in greenness (NDVI) is not automatically damage; ripening, harvest, or normal seasonality causes drops too. KhetSaakshi samples candidate cropland plots from a 1-5 km ring and matches the 30 plots that share the exact crop stage and seasonality. Damage is computed as excess drop relative to neighbors with a 500-iteration bootstrap 90% confidence interval.
+              <strong>3. Matched Controls & Difference-in-Differences:</strong> A drop in greenness (NDVI) is not automatically damage; ripening, harvest, or normal seasonality causes drops too. AgroTrace samples candidate cropland plots from a 1-5 km ring and matches the 30 plots that share the exact crop stage and seasonality. Damage is computed as excess drop relative to neighbors with a 500-iteration bootstrap 90% confidence interval.
             </p>
             <p>
               <strong>4. Widespread vs Localized Filter:</strong> If more than 50% of neighboring control plots also suffered a drop, the event is categorized as widespread (which under PMFBY is handled at the area-yield level). This stops false claims of localized loss.
@@ -56,7 +56,7 @@ export function ScreenS5MethodAndLimits() {
               <strong>Satellite Revisit Cadence:</strong> Sentinel-2 has an approximate 5-day revisit cycle. For claims submitted within 48 hours before an overhead pass, only provisional weather analysis can be produced until the next pass occurs.
             </li>
             <li>
-              <strong>Decision Support, Not Human Replacement:</strong> KhetSaakshi prioritizes surveyor queues to fast-track obvious claims and target visits where uncertainties exist. Final claim settlement authority remains strictly with the insurance company and state authorities.
+              <strong>Decision Support, Not Human Replacement:</strong> AgroTrace prioritizes surveyor queues to fast-track obvious claims and target visits where uncertainties exist. Final claim settlement authority remains strictly with the insurance company and state authorities.
             </li>
           </ul>
         </div>

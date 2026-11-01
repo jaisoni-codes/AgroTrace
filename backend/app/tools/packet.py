@@ -37,7 +37,7 @@ def generate_evidence_packet(
 
     # Header
     c.setFont("Helvetica-Bold", 18)
-    c.drawString(50, height - 50, "KhetSaakshi - Satellite Witness Evidence Packet")
+    c.drawString(50, height - 50, "AgroTrace - Satellite Witness Evidence Packet")
     c.setFont("Helvetica", 10)
     c.drawString(50, height - 68, "Pradhan Mantri Fasal Bima Yojana (PMFBY) Localized Claim Triage")
     c.setStrokeColor(colors.HexColor("#1F5C45"))

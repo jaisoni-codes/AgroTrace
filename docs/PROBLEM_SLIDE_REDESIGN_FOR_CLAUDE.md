@@ -50,7 +50,7 @@ Add a high-contrast visual comparison box showing **The Unaddressed Gap**:
 
 ```
 +----------------------------------------------------+----------------------------------------------------+
-|  WHAT THE GOVERNMENT BUILT: YES-TECH               |  THE UNADDRESSED GAP: KHETSAAKSHI                  |
+|  WHAT THE GOVERNMENT BUILT: YES-TECH               |  THE UNADDRESSED GAP: AGROTRACE                  |
 |  (Area-Approach Macro Yield)                       |  (Hyper-Local Plot-Level Triage)                   |
 +----------------------------------------------------+----------------------------------------------------+
 | • Level: Gram Panchayat / Block (~5,000+ Hectares) | • Level: Individual Farm Polygon (~1.2 Hectares)   |

@@ -14,7 +14,7 @@ from app.agent.llm import parse_intake_text
 from app.agent.graph import run_pipeline_graph, PACKETS_DIR
 
 app = FastAPI(
-    title="KhetSaakshi API",
+    title="AgroTrace API",
     description="Satellite Witness for Localized Crop-Loss Claims under PMFBY",
     version="1.0.0"
 )
@@ -34,7 +34,7 @@ def get_location_name_from_coords(lat: float, lon: float, fallback: str = "Agric
     """Reverse geocode coordinates to real village/tehsil/district/state."""
     try:
         url = f"https://nominatim.openstreetmap.org/reverse?lat={lat}&lon={lon}&format=json"
-        req = urllib.request.Request(url, headers={'User-Agent': 'KhetSaakshiApp/1.0'})
+        req = urllib.request.Request(url, headers={'User-Agent': 'AgroTraceApp/1.0'})
         with urllib.request.urlopen(req, timeout=4) as response:
             data = json.loads(response.read().decode('utf-8'))
             address = data.get("address", {})
@@ -150,7 +150,7 @@ BATCH_CLAIMS: List[Dict[str, Any]] = [
 
 @app.get("/api/health")
 def health_check():
-    return {"status": "ok", "app": "KhetSaakshi", "version": "1.0.0"}
+    return {"status": "ok", "app": "AgroTrace", "version": "1.0.0"}
 
 @app.get("/api/sources/status")
 def get_sources_status():

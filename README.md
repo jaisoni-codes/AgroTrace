@@ -1,11 +1,11 @@
-# KhetSaakshi (खेत्साक्षी)
+# AgroTrace (खेत्साक्षी)
 ### Satellite Witness for Localized Crop-Loss Claims under PMFBY
 Forge Gen AI Buildathon — Theme 2: Climate, Resource Infrastructure and Global Supply Resilience
 
 ---
 
 ## 1. Overview
-KhetSaakshi is an autonomous agent that takes a single farm polygon, crop, and claimed calamity date, then:
+AgroTrace is an autonomous agent that takes a single farm polygon, crop, and claimed calamity date, then:
 - Verifies the extreme event from live weather reanalysis (Open-Meteo ERA5 / Forecast).
 - Measures plot-level damage from Sentinel-2 optical and Sentinel-1 radar imagery against 30 matched neighboring cropland plots (Difference-in-Differences).
 - Executes consistency and anti-fraud checks.

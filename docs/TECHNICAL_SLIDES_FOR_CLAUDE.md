@@ -1,6 +1,6 @@
 # Technical Slides Specification: AI Reasoning & Agentic Architecture
 **Theme**: Climate, Resource Infrastructure & Global Supply Resilience  
-**Project**: KhetSaakshi (Autonomous Satellite Agent for PMFBY Claims)
+**Project**: AgroTrace (Autonomous Satellite Agent for PMFBY Claims)
 
 ---
 

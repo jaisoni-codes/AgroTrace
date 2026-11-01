@@ -1,6 +1,6 @@
-# KhetSaakshi: Pitch Deck Content & Architecture Specification
+# AgroTrace: Pitch Deck Content & Architecture Specification
 **Track**: Theme 2 — Climate, Resource Infrastructure & Global Supply Resilience  
-**Project**: KhetSaakshi (Satellite Witness for Localized PMFBY Crop-Loss Claims)
+**Project**: AgroTrace (Satellite Witness for Localized PMFBY Crop-Loss Claims)
 
 ---
 
@@ -111,8 +111,8 @@ Every output metric references its exact raw origin:
 - **Context**: PMFBY (Pradhan Mantri Fasal Bima Yojana) settles localized calamities (flash floods, hailstorms) on an individual farm-by-farm basis with a strict 72-hour reporting deadline.
 - **The Real-World Bottleneck**: Extreme climate shifts create localized surveyor queues taking 4–6 weeks. During this delay, standing water recedes, rotting crops decompose, and physical evidence fades, resulting in disputes, delayed payouts, and disrupted seed-capital for the next sowing cycle.
 
-### The Critical Gap: YES-TECH vs KhetSaakshi
-| Feature | Government YES-TECH (Existing) | KhetSaakshi (Our Solution) |
+### The Critical Gap: YES-TECH vs AgroTrace
+| Feature | Government YES-TECH (Existing) | AgroTrace (Our Solution) |
 |---|---|---|
 | **Assessment Unit** | Gram Panchayat / Block (Area Approach) | **Individual Farm Polygon (Plot-Level)** |
 | **Primary Use Case** | Season-end crop yield estimation | **Rapid 72-Hour Localized Calamity Triage** |

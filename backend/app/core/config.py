@@ -13,10 +13,10 @@ def load_thresholds() -> dict:
 THRESHOLDS = load_thresholds()
 
 class Settings(BaseSettings):
-    PROJECT_NAME: str = "KhetSaakshi"
+    PROJECT_NAME: str = "AgroTrace"
     API_V1_STR: str = "/api"
     CACHE_DIR: Path = Path(__file__).resolve().parent.parent.parent / ".cache"
-    DATABASE_URL: str = "sqlite:///./khetsaakshi.db"
+    DATABASE_URL: str = "sqlite:///./agrotrace.db"
     
     # LLM Settings
     GEMINI_API_KEY: str = ""
